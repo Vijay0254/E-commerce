@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.originalnav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
+}
+.nostra{
+    position: absolute;
+    left: 10px;
+}
+.content{
+    display: flex;
+    gap: 70px;
+    padding-right: 10px;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+}
+.content a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.content p:hover{
+    cursor: pointer;
+}
+.sidenav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.sidenav-side{
+    height: 100%;
+    background-color: rgb(39, 37, 53);
+    width: 40%;
+    position: fixed;
+    top: 0px;
+    left: -900px;
+    color: white;
+    transition: 2s;
+}
+.sidenav-side a{
+    text-decoration: none;
+    color: white;
+}
+.sidenav-side a:hover{
+    text-decoration: underline;
+    color: white;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    font-size: large;
+}
+.cross-sidenav{
+    text-align: right;
+    padding: 20px;
+    font-size: larger;
+}
+li:hover{
+    cursor: pointer;
+}
+i:hover{
+    color: red;
+}
+.side{
+    display: none;
+}
+@media screen and (max-width:800px){
+    .side{
+        display: block;
+    }
+    .originalnav{
+        display: none;
+    }
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact{
+    color: white;
+    width: 60vw;
+    border-radius: 10px;
+    background-color: rgb(39, 37, 53);
+    padding: 40px;
+}
+.contact h1{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.contact label{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: block;
+}
+.inp{
+    width: 50vw;
+    padding: 2vw;
+    border: solid white 1px;
+    border-radius: 5px;
+    font-size: 1vw;
+    border: none;
+    margin-left: 30px;
+}
+.contact textarea{
+    resize: vertical;
+    height: 10vh;
+}
+.submi{
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+    width:70px;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.newsletter{
+    text-align: center;
+    padding: 20px;
+}
+.newsletter p{
+    padding: 10px;
+}
+.newsletter input{
+    width: 75%;
+    border: solid;
+    height: 35px;
+}
+.sub{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.sub-btn{
+    display: flex;
+    justify-content: center;
+}
+.bottom-nav{
+    background-color:  rgb(39, 37, 53);
+    margin-top: 20px;
+    color: white;
+    padding: 35px;
+}
+.icon{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+.bottom-nav p{
+    padding-top: 10px;
+    font-size: large;
+}
