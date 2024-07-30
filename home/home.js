@@ -55,3 +55,16 @@ leftbtn.addEventListener("click",function(){
     slider.style.marginLeft = "-" + margin + "vw"
 })
 
+window.addEventListener("scroll",function(){
+    var windowheight = window.innerHeight
+    var box = document.getElementById("box")
+   
+    var boxtop = box.getBoundingClientRect().top
+    if(boxtop<windowheight)
+    {
+        box.style.opacity = "1"
+    }
+    else{
+        box.style.opacity = "0"
+    }
+})
