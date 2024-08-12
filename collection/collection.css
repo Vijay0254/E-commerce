@@ -112,6 +112,18 @@ i:hover{
 .section-one input{
     margin-top: 10px;
 }
+#entire{
+    padding-top: 30px;
+}
+#entire button{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
 .section-two{
     width: 100vw;
 }

@@ -38,22 +38,60 @@ inp.addEventListener("keyup",function(){
 })
 
 //checking occasion
-// var check = document.querySelectorAll(".check")
-// var dress = document.querySelectorAll(".dress")
-// check.addEventListener("click",function(){
-    
-//     check.forEach(function(element1){
-//         var entervalue1 = element1.textContent.toUpperCase()
-//         dress.forEach(function(element){
-//             var checktext = element.textContent.toUpperCase()
-//             if(checktext.indexOf(entervalue1)<0)
-//             {
-//                 element.style.display = "none"
-//             }
-//             else{
-//                 element.style.display = "block"
-//             }
-//         })
-    
-//     })
-// })
+var checkbox = document.querySelectorAll(".check")
+checkbox.forEach((element) =>{
+    element.addEventListener("click",function(event){
+        var val = element.id.toUpperCase().trim()
+        dress.forEach((e) =>{
+        var it = e.dataset.item.toUpperCase()
+        console.log(it)
+        if(it == val)
+        {
+            e.style.display = "block"
+        }
+        else{
+            e.style.display = "none"
+        }
+        })
+    })
+})
+
+var checkc = document.querySelectorAll(".checkc")
+checkc.forEach((element) =>{
+    element.addEventListener("click",function(event){
+        var val = element.id.toUpperCase().trim()
+        dress.forEach((e) =>{
+        var it = e.dataset.color.toUpperCase()
+        console.log(it)
+        if(it == val)
+        {
+            e.style.display = "block"
+        }
+        else{
+            e.style.display = "none"
+        }
+        })
+    })
+})
+var checka = document.querySelectorAll(".checka")
+checka.forEach((element) =>{
+    element.addEventListener("click",function(event){
+        var val = element.id.toUpperCase().trim()
+        dress.forEach((e) =>{
+        var it = e.dataset.arrival.toUpperCase()
+        console.log(it)
+        if(it == val)
+        {
+            e.style.display = "block"
+        }
+        else{
+            e.style.display = "none"
+        }
+        })
+    })
+})
+
+var all = document.getElementById("all")
+all.addEventListener("click",function(){
+    location.reload()
+})
