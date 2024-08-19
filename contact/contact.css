@@ -172,3 +172,14 @@ i:hover{
     padding-top: 10px;
     font-size: large;
 }
+@media screen and (max-width: 450px) {
+    .contact label{
+        padding-left: 0px;
+    }
+    .contact .inp{
+        margin-left: 0px;
+    }
+    .submi{
+        margin-left: 0px;
+    }
+}

@@ -302,3 +302,33 @@ i:hover{
     padding-top: 10px;
     font-size: large;
 }
+@media screen and (max-width: 450px) {
+    #cross{
+        padding-left: 10px;
+    }
+    .slider-wordings-inner{
+        padding: 0px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .about-container{
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .about{
+        width: 110px;
+    }
+    .about img{
+        padding-left: 30px;
+    }
+    .limited-offer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .limited{
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+}

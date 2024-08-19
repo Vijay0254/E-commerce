@@ -197,3 +197,19 @@ i:hover{
     padding-top: 10px;
     font-size: large;
 }
+@media screen and (max-width: 450px) {
+    .dress{
+        width: 100px;
+        text-align: center;
+        border: 1px solid #ecf0f1;
+    }
+    .dress-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    #cross{
+        padding-left: 10px;
+    }
+}
